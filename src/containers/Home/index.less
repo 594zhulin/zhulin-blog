@@ -1,0 +1,346 @@
+.body-wrap {
+  width: 95%;
+  margin: 3em auto;
+}
+@media only screen and (min-width: 1100px),
+  only screen and (min-width: 1280px) {
+  .body-wrap {
+    width: 1260px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .blog-list {
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .blog-list {
+    column-count: 3;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .blog-list {
+    column-count: 4;
+  }
+}
+
+.blog-list {
+  margin: 1.5em 0;
+  padding: 0;
+  column-gap: 3em;
+  font-size: 0.85em;
+
+  .blog-item {
+    position: relative;
+    display: inline-block;
+    padding: 1.5em;
+    margin: 0 0 3em;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.1);
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .blog-cover {
+    border: 1px solid #fff;
+    border-radius: 8px;
+  }
+
+  .comment-count {
+    width: 30px;
+    height: 30px;
+    font-size: 11px;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -20px;
+    position: relative;
+    background-image: url(../../assets/comment-bg.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+  }
+
+  .blog-title {
+    font-family: "Varela", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #141414;
+    margin-top: 13px;
+    margin-bottom: 3px;
+    letter-spacing: 0.7px;
+    word-break: break-all;
+    font-weight: 300;
+  }
+
+  .blog-date {
+    font-family: "Varela", sans-serif;
+    font-size: 14px;
+    color: #b8b4b4;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+  }
+
+  .blog-category {
+    color: #b8b4b4;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+  }
+}
+
+.blog-pagination {
+  position: relative;
+  padding: 0px 0;
+  font-size: 13px;
+  line-height: 13px;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  clear: both;
+  width: 100%;
+  text-align: center;
+
+  .ant-pagination-prev,
+  .ant-pagination-next,
+  .ant-pagination-item {
+    height: auto;
+    line-height: normal;
+    margin: 4px 8px 4px 0;
+  }
+
+  .ant-pagination-item-active {
+    border: none;
+  }
+
+  .ant-pagination-item a,
+  .ant-pagination-prev .ant-pagination-item-link,
+  .ant-pagination-next .ant-pagination-item-link {
+    display: inline-block;
+    padding: 15px 18px 14px 18px;
+    width: auto;
+    height: 42px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.1);
+    border-radius: 7px;
+    border: none;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .ant-pagination-item-active a {
+    padding: 15px 18px 14px 18px;
+    background-color: #24221d;
+    color: #fff;
+  }
+}
+
+.blog-detail {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 1.5em;
+  margin: 0 0 3em;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.1);
+  border-radius: 7px;
+  text-align: center;
+  cursor: pointer;
+
+  .comment-count {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    margin: -20px auto 0 auto;
+    background-image: url(../../assets/comment-bg.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .blog-title {
+    margin: 25px 0 3px 0;
+    font-family: "Varela", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #141414;
+    letter-spacing: 0.7px;
+  }
+
+  .blog-date {
+    margin-top: 2px;
+    font-family: "Varela", sans-serif;
+    font-size: 14px;
+    color: #b8b4b4;
+    letter-spacing: 0.5px;
+  }
+
+  .blog-category {
+    margin: 2px 0 8px 0;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    color: #b8b4b4;
+  }
+
+  .content {
+    width: 60%;
+    margin: 30px auto 0 auto;
+    background-color: #fff;
+    text-align: left;
+    font-size: 100%;
+  }
+
+  .content p {
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-size: 16px;
+  }
+
+  .blog-img-copyright {
+    width: 60%;
+    margin: 30px auto 0 auto;
+    background-color: #fff;
+    text-align: left;
+  }
+
+  .blog-tag {
+    width: 60%;
+    margin: 30px auto;
+    background-color: #fff;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .blog-comments {
+    width: 60%;
+    margin: 0 auto;
+    border-top: 4px solid #f5f5f5;
+    text-align: left;
+  }
+
+  .comment-item{
+    display: flex;
+    line-height: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #f5f5f5;
+    font-size: 14px;
+  }
+
+  .comment-info{
+    flex: 1;
+    margin-left: 10px;
+    align-items: center;
+  }
+  
+  .comment-author,.comment-date{
+    float: left;
+  }
+
+  .comment-author{
+    margin-right: 10px;
+    color: #333;
+    font-weight: 700;
+  }
+
+  .comment-date{
+    color: #aaa;
+  }
+
+  .comment-content{
+    margin-top: 10px;
+    line-height: 24px;
+    clear: both;
+    color: #777;
+  }
+
+  .blog-reply,
+  .comment-title{
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .comment-title,
+  .reply-title{
+    font-family: 'Varela', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #141414;
+    margin-top: 25px;
+    margin-bottom: 3px;
+    letter-spacing: .7px;
+    font-weight: normal !important;
+  }
+
+  .reply-title-supply{
+    line-height: 24px;
+    margin-bottom: 30px;
+    font-size: 12px;
+  }
+
+  .reply-form .ant-form-item-label > label{
+    color: #b8b4b4;
+  }
+
+  .reply-form .ant-form-item{
+    margin-bottom: 7px;
+  }
+
+  textarea,input{
+    width: 100%;
+    height: 148px;
+    line-height: normal;
+    padding: 10px;
+    color: #666;
+    border: 4px solid #f5f5f5 !important;
+    border-radius: 0;
+  }
+
+  input{
+    height: 43px;
+    margin-bottom: 20px;
+    border-right: 4px solid #f5f5f5 !important;
+  }
+
+  input:hover{
+    border-right: 4px solid #f5f5f5 !important;
+  }
+
+  input:focus{
+    box-shadow: none;
+    outline: -webkit-focus-ring-color auto 1px;
+    outline-offset: -2px;
+    border-right: 4px solid #f5f5f5 !important;
+  }
+
+  .reply-btn, .answer-btn{
+    height: auto;
+    line-height: 1;
+    padding: .6em 1em .6em;
+    margin: 26px 0 26px 5px;
+    background-color: #1e1e1e;
+    border: 0px;
+    border-radius: 0;
+    font-size: 13px;
+    color: #fff;
+  }
+
+  .answer-btn{
+    float: right;
+    margin-bottom: 5px;
+  }
+
+}

@@ -1,0 +1,14 @@
+[ignore]
+.*/node_modules/.*
+.*/build/.*
+.*/utils/.*
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.file_ext=.js
+module.file_ext=.less
+[strict]
